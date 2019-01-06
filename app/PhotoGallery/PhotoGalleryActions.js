@@ -1,6 +1,6 @@
 export const mapStateToProps = (state) => {
 	return {
-		Photos: state.PhotoGalleryReducer
+		photos: state.PhotoGalleryReducer
 	};
 };
 

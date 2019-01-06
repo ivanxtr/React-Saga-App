@@ -10,7 +10,6 @@ export default function PhotoGalleryReducer(state=[],action ) {
 
 	case "FETCH_PHOTOS_REJECTED":
 		return {
-			...state,
 			error: action.payload,
 			completed: false
 		};
