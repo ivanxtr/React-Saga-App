@@ -41,7 +41,7 @@ class PhotoGalleryComponent extends React.Component {
 								</button>
 							</div>
 							<div className="modal-body d-flex justify-content-center align-items-center">
-								<img src={this.state.modalImage}/>
+								<img className="w-100" src={this.state.modalImage}/>
 							</div>
 						</div>
 					</div>
@@ -54,7 +54,10 @@ class PhotoGalleryComponent extends React.Component {
 
 PhotoGalleryComponent.propTypes = {
 	fetchPhotos: propTypes.func,
-	photos: propTypes.object
+	photos: propTypes.oneOfType([
+		propTypes.object,
+		propTypes.array
+	])
 };
 
 const ConnectToStore = connect(

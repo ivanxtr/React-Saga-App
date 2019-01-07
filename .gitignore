@@ -17,3 +17,10 @@ docker-compose.yml
 
 #packages
 package-lock.json
+
+#coverage report
+coverage
+
+#public bundles 
+public/main.min.js
+public/css/styles.min.css

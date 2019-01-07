@@ -2,11 +2,16 @@
 
 ## *__Installation__*
 ```
-    git pull https://github.com/ivanxtr/React-Saga-App.git revel
-    cd revel/
+    git pull https://github.com/ivanxtr/React-Saga-App.git
+    cd React-Saga-App/
     npm install
-    npm start or webpack --progress --colors
+    npm start
     go to http://localhost:3000/
+```
+
+## Testing
+```
+npm run test 
 ```
 
 ## File Structure

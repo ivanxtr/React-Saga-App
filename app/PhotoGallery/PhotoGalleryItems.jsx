@@ -26,9 +26,12 @@ class PhotoGalleryItems extends React.Component {
 }
 
 PhotoGalleryItems.propTypes = {
-	photos: propTypes.object,
 	fetchPhotos: propTypes.func,
-	onUserClick: propTypes.func 
+	onUserClick: propTypes.func,
+	photos: propTypes.oneOfType([
+		propTypes.object,
+		propTypes.array
+	]) 
 };
 
 export default PhotoGalleryLoader(PhotoGalleryItems);

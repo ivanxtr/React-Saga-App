@@ -4,15 +4,18 @@ import propTypes from "prop-types";
 const PhotoGalleryLoader = (WrappedComponent) => {
 	return class PhotoGalleryLoader extends React.Component {
 		render(){
-			return this.props.photos.data ? <WrappedComponent {...this.props}/> : <div className="lds-facebook"><div></div><div></div><div></div></div>;
+			const {photos} = this.props;
+			return photos.data ? <WrappedComponent {...this.props}/> : <img src="https://i.redd.it/ounq1mw5kdxy.gif"/>;
 		}
 	};
 };
 
 PhotoGalleryLoader.propTypes = {
-	photos: propTypes.shape({
-		data: propTypes.array
-	})
+	photos: propTypes.oneOfType([
+		propTypes.object,
+		propTypes.array
+	])
 };
+
 
 export default PhotoGalleryLoader;
