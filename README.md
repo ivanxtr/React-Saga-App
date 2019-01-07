@@ -1,5 +1,7 @@
 # __React Redux-Saga App__
 
+![](./DEMO.gif)
+
 ## *__Installation__*
 ```
     git pull https://github.com/ivanxtr/React-Saga-App.git
